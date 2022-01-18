@@ -152,7 +152,23 @@ XF86AudioLowerVolume
 # still
 XF86AudioMute
   amixer -D pulse sset Master toggle-mute
-  
+
+#PLAY
+XF86AudioPlay
+    playerctl play-pause
+
+#Next
+XF86AudioNext
+    playerctl next
+
+#previous
+XF86AudioPrev
+    playerctl previous
+
+#Stop
+XF86AudioStop
+    playerctl stop
+
 # amixer -q set Master toggle
 # Simple amixer command seems to have problems unmuting device
 
@@ -176,7 +192,7 @@ super+Print
 
 # Shortcuts
 super + w 
-  brave-beta
+  brave
 
 super + n 
   thunar  
